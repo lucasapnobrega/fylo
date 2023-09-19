@@ -1,0 +1,33 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: 'Open Sans', sans-serif;
+}
+
+img {
+    max-width: 100%;
+}
+
+@import './globals/variables.scss';
+
+@import './globals/mixin.scss';
+
+
+
+@import './mainPage/header.scss';
+
+@import './mainPage/hero.scss';
+
+@import './mainPage/information.scss';
+
+@import './mainPage/earlyAccess.scss';
+
+@import './mainPage/footer.scss';
+
+@import './mainPage/faq.scss';
+
+
+
+@import './loginRegister/loginRegister.scss';
