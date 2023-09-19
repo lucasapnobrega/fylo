@@ -1,0 +1,184 @@
+.information {
+    background-color: $lightBlue;
+    padding-bottom: 8rem;
+
+    .bg {
+        background-image: url('../../images/bg-curve-mobile.svg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 52px;
+        position: relative;
+        bottom: 50px;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        gap: 6rem;
+
+        .information-content {
+            text-align: center;
+
+            h2 {
+                font-weight: bold;
+                color: $darkBlue;
+                font-size: 1.4rem;
+                margin-bottom: 1.4rem;
+                font-family: 'Raleway', sans-serif;
+            }
+
+            p {
+                color: $desaturatedBlue;
+            }
+
+            .fylo-works {
+                color: $cyan;
+                border-bottom: 2px solid $cyan;
+                width: 185px;
+                margin: 3.5rem auto;
+                padding-bottom: 0.2rem;
+                transition: transform .4s;
+                cursor: pointer;
+
+                img {
+                    width: 25px;
+                    margin-left: 0.4rem;
+                }
+
+                &:hover {
+                    transform: translateX(18px);
+                }
+            }
+        }
+
+        .information-quote {
+            background-color: #fff;
+            color: $darkBlue;
+            padding: 1.5rem;
+            transition: all .4s;
+
+            .img-quote {
+                width: 20px;
+            }
+
+            p {
+                line-height: 1.8;
+            }
+
+            &-profile {
+                display: flex;
+                gap: 1rem;
+                margin-top: 1.5rem;
+
+                img {
+                    border-radius: 50%;
+                    width: 50px;
+                    height: 50px;
+                }
+
+                &-info {
+                    h4 {
+                        font-weight: bold;
+                        font-size: 1rem;
+                    }
+
+                    p {
+                        font-size: 0.8rem;
+                    }
+                }
+            }
+
+            &:hover {
+                background-color: $darkBlue;
+                color: #fff;
+
+                .img-quote {
+                    filter: invert(1);
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    .information {
+        .bg {
+            background-image: url('../../images/bg-curve-desktop.svg');
+        }
+        
+        .container {
+            .information-content {
+                h2 {
+                    font-size: 1.6rem;
+                }
+
+                .fylo-works {
+                    width: 200px;
+                }
+            }
+
+            .information-quote {
+                width: 70%;
+                margin: 0 auto;
+            }
+        }
+    }
+}
+
+@media (min-width: 1024px) {
+    .information {
+        .container {
+            flex-direction: row;
+
+            img {
+                order: 2;
+                width: 45%;
+            }
+
+            .information-wrapper {
+                order: 1;
+            }
+
+            .information-content {
+                text-align: left;
+
+                h2 {
+                    font-size: 2.2rem;
+                }
+
+                p {
+                    font-size: 1.1rem;
+                }
+                
+                .fylo-works {
+                    text-align: left;
+                    margin: 2rem 0;
+                }
+            }
+
+            .information-quote {
+                margin-right: 0;
+                margin-left: 0;
+                width: 85%;
+
+                &-profile {
+                    img {
+                        order: 1;
+                    }
+
+                    &-info {
+                        order: 2;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 1440px) {
+    .information  .container {
+        .information-content h2 {
+            font-size: 2.6rem;
+        }
+    }
+}
