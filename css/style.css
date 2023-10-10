@@ -23,7 +23,7 @@ img {
 .header .container .header-nav-list {
   list-style: none;
   position: absolute;
-  top: 75px;
+  top: 5rem;
   left: 0;
   color: #070439;
   background-color: rgba(241, 241, 241, 0.8156862745);
@@ -70,7 +70,7 @@ img {
 .header.active .header-nav-list {
   overflow: visible;
   opacity: 1;
-  height: 20%;
+  height: 12rem;
 }
 
 @media (min-width: 768px) {

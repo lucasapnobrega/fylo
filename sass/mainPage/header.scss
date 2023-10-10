@@ -12,7 +12,7 @@
     .header-nav-list {
         list-style: none;
         position: absolute;
-        top: 75px;
+        top: 5rem;
         left: 0;
 
         color: $darkBlue;
@@ -72,7 +72,7 @@
 .header.active .header-nav-list {
     overflow: visible;
     opacity: 1;
-    height: 20%;
+    height: 12rem;
 }
 
 
